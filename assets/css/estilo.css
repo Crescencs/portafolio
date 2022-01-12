@@ -1,0 +1,162 @@
+* {
+    /*no olviadr poner padding y margin en 0*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/**scroll personalizado*/
+/*?primero se accede a la barra y se lede el tamaño entre otras propiedades*/
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+/*?despues de edita la barra que baja y sube con propiedades X*/
+body::-webkit-scrollbar-thumb {
+    background: #95afc0;
+    border-radius: 5px;
+}
+
+/*?header (barra de navegacion)*/
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.nav.active {
+    background: rgba(9, 1, 48, 0.986);
+    padding: 10px;
+}
+
+.nav.active .logo,
+.nav.active a {
+    color: aliceblue;
+}
+
+.nav.active a:hover {
+    background: aliceblue;
+    color: black;
+}
+.logo{
+    font-size: 25px;
+    color: black;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    color: rgb(255, 250, 250);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.presentacion h1 {
+    text-align: center;
+    padding-right: 100px;
+}
+
+/*TODO: efecto de maquina de escribir con JS*/
+#maquina_de_escribir {
+    display: inline-block;
+    font-size: 25px;
+    
+}
+
+/**este el espacio de cada section*/
+/*!sections*/
+#section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+#section-1 img {
+    height: 350px;
+    padding-left: 50px;
+}
+#maquina_de_escribir{
+    padding: 5px;
+}
+/*?estilo de boton*/
+#Ver_cv {
+    text-decoration: none;
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: absolute;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+#Ver_cv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+#Ver_cv:hover {
+    color: #e8e8e8;
+}
+
+#Ver_cv:hover::before {
+    width: 100%;
+}
+#section-2{
+    height: 650px;
+}
+.container_section_2{
+padding-top: 60px;
+}
+#section-3{
+    height: 650px;
+}
+.container_section_3{
+    padding-top: 60px;
+    }
+#section-4{
+    height: 650px;
+}
+.container_section_4{
+    padding-top: 60px;
+    }
