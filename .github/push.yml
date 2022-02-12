@@ -1,0 +1,17 @@
+name: portafolio de cv
+on: 
+  push:
+    branches: 
+        - main
+jobs:
+  diploy-page:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@2.3.1
+
+    - name: Deploy
+    uses: JamesIves/github-pages-dploy-action@4.1.4
+    with:
+      branch: gh-pages
+      folder: .
