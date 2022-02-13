@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
 }
 .container_section_2-img-personal {
   display: inline-block;
-  height: 300px;
+  height: 500px;
   border-radius: 100px;
   background: teal;
   margin: auto;
