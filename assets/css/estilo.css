@@ -173,12 +173,16 @@ body::-webkit-scrollbar-thumb {
 .container_section_4 {
   padding-top: 60px;
   text-align: center;
-  display: block; /*?tener en cuanta este formato si de verdad sirbe de algo*/
+}
+input {
+  margin: 20px auto;
+  text-align: center;
+  display: block;
 }
 /*! footer*/
 footer {
   color: #e8e8e8;
   text-align: center;
-  height: 80px;
+  height: 70px;
   background: rgba(9, 1, 48, 0.986);
 }
